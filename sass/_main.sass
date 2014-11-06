@@ -1,71 +1,1367 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//all
+html
+	font-size: 62.5% 
+body
+	-ms-overflow-y: auto
+	overflow-y: auto
+	-ms-overflow-x: hidden
+	overflow-x: hidden
+	&:after
+		content: "" 
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+		background: rgba(0,0,0,.4) 
+		visibility: hidden
+		opacity: 0
+		+tr(opacity .2s) 
+		z-index: 999
+	&.is-moved-projects, &.is-moved-menu
+		height: 100%
+		// overflow: hidden
+		.con
+			+transform(translateX(310px))
+		&:after
+			visibility: visible
+			opacity: 1
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic)
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic)
+=fn
+	font-family: "PT Sans Narrow", Arial, sans-serif 
+=f
+	font-family: "PT Sans", Arial, sans-serif 	
+
++font("pfagoraslabpro-italic", PFAgoraSlabPro-MedItalic)
+
+=italic
+	font-family: "pfagoraslabpro-italic", Arial, sans-serif
+=georgia
+	font-family: Georgia, Arial, sans-serif 
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+=ttu	
+	text-transform: uppercase
+@font-face
+	font-family: 'fontello'
+	src: url('../font/fontello.eot?95040444')
+	src: url('../font/fontello.eot?95040444#iefix') format('embedded-opentype'), url('../font/fontello.woff?95040444') format('woff'), url('../font/fontello.ttf?95040444') format('truetype'), url('../font/fontello.svg?95040444#fontello') format('svg')
+	font-weight: normal
+	font-style: normal
+
+.icon
+	display: inline-block
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+	display: inline-block
+	font-family: "fontello"
+	font-style: normal
+	font-weight: normal
+	speak: none
+	
+.icon-facebook:before
+	content: '\e800'
+.icon-odnoklassniki:before
+	content: '\e801'
+.icon-twitter:before
+	content: '\e802'
+.icon-vkontakte:before
+	content: '\e803'
+.icon-search:before
+	content: '\e804'
+.icon-shop:before
+	content: '\e805'
+.icon-bear:before
+	content: '\e807'
+.icon-star:before
+	content: '\e808'
+.icon-theatre:before
+	content: '\e809'
+.icon-bicycle:before
+	content: '\e80a'
+.icon-camera:before
+	content: '\e80b'
+.icon-waves:before
+	content: '\e80c'
+.icon-wtf:before
+	content: '\e80d'
+.icon-check:before
+	content: '\e80e'
+.icon-cinema:before
+	content: '\e80f'
+.icon-cup:before
+	content: '\e810'
+.icon-disco:before
+	content: '\e811'
+.icon-drink:before
+	content: '\e812'
+.icon-drop:before
+	content: '\e813'
+.icon-food:before
+	content: '\e814'
+.icon-graph:before
+	content: '\e815'
+.icon-kids:before
+	content: '\e816'
+.icon-lamp:before
+	content: '\e817'
+.icon-marker:before
+	content: '\e819'
+.icon-music:before
+	content: '\e81a'
+.icon-park:before
+	content: '\e81b'
+.icon-picture:before
+	content: '\e81c'
+.icon-more:before
+	content: '\e81d'
+.icon-down-open:before
+	content: '\e81e'
+.icon-cancel:before
+	content: '\e81f'
+
+
+a
+	text-decoration: none
+button
+	background: none 
+	
+.btn-blue
+	padding: 15px 20px 17px 40px
+	background: #25c4c7  
+	color: #fff
+	+fs(24)
+	line-height: 18px 
+	display: inline-block
+	+georgia
+	font-weight: normal
+.btn-more
+	padding: 17px 20px 13px
+	color: #4cb3bc
+	+fs(13.05)
+	line-height: 20.07px
+	+georgia
+	border: 1px solid #25c4c7
+	display: inline-block
+	+ttu
+	&:hover
+		background: #25c4c7 
+		color: #fff 
+//wrapper
+.wrapper
+	padding: 74px 0 0 0 
+	left: 0
+	position: relative
+.con
+	margin: 0 auto
+	max-width: 480px
+	+transition(transform 0.4s)
+	+transform(translateX(0px) translate3d(0,0,0))
+// header
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0 
+	height: 74px
+	padding: 12px 20px
+	background: #000 
+	+clr
+	z-index: 9999
+
+.btn-menu
+	float: left
+	width: 50px
+	height: 50px
+	margin-right: 20px
+	border-radius: 4px
+	background: #4e4c4c
+	font-size: 0
+	&.is-active
+		background: #E5E5E5
+		i
+			border-color: #000
+			&:before, &:after
+				background: #000 
+	i
+		display: inline-block
+		width: 28px
+		border-top: 3px solid #fff
+		vertical-align: middle
+		&:before, &:after
+			content: ""
+			display: block
+			width: 28px
+			height: 3px
+			margin-top: 7px
+			background: #FFF 
+
+.btn-search
+	float: right
+	width: 50px
+	height: 50px
+	margin-left: 15px
+	background: #4e4c4c
+	border-radius: 4px 
+	position: relative
+	&.is-active
+		background: #E5E5E5
+		.icon
+			color: #6B6B6B
+	.icon
+		font-size: 32px
+		color: #fff
+			
+.logo
+	float: left
+	height: 47px
+	+fs(10.98)
+	color: #a3a3a3 
+	position: relative
+	margin-top: 4px
+	+r(440)
+		display: none
+	span
+		+italic
+		position: absolute
+		bottom: 0
+		left: 0
+.logo-a42
+	float: right
+	.icon
+		font-size: 50px
+
+
+
+//slider
+.slider
+	position: relative
+	max-width: 480px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+	.slider__pager
+		display: none 
+	.slider__list
+		max-width: 480px
+		width: 100%
+		z-index: 2 
+	.slider__item
+		font-size: 0
+		display: block
+		margin: 0
+		min-height: 296px
+		img
+			width: 100%
+		.slider__info
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(80, 207, 210, 0.8)
+			padding: 20px 20px 25px
+			z-index: 999
+			display: block
+			span
+				+georgia
+				color: #fff 
+				display: block
+				em
+					font-style: italic
+				&.slider__heading
+					+fs(24)
+					line-height: 18px
+					margin-bottom: 10px
+				&.slider__text
+					+fs(20)
+					line-height: 25px
+	.slick-dots
+		position: relative
+		padding-top: 20px
+		+fs(0)
+		margin-bottom: 25px
+		button
+			display: inline-block
+			width: 10px
+			height: 10px
+			margin: 0 10px 
+			+border-radius(50%)
+			background-color: #C7C7C7
+			+box-shadow(inset 0.5px 1px 1px rgba(74, 171, 188, 0.75))
+			text-indent: -1000px
+			overflow: hidden
+			cursor: pointer
+			&:active
+				background-color: #B8E8E9
+		li
+			padding: 0
+			&.slick-active
+				button
+					background-color: #B8E8E9
+					+box-shadow(inset 0.5px 1px 1px rgba(74, 171, 188, 0.75))
+					opacity: 1
+	.slick-prev, .slick-next
+		position: absolute
+		top: 104px
+		z-index: 999
+		cursor: pointer
+	.slick-prev
+		+svg(arr-left, 15, 48)
+		left: 21px
+		&:active
+			+svg(arr-left-active, 15, 48)
+	.slick-next
+		+svg(arr-right, 15, 48)
+		right: 21px
+		&:active
+			+svg(arr-right-active, 15, 48)
+
+//list
+.list
+	padding: 20px 20px 0
+	.item
+		margin-bottom: 30px
+.item
+	+clr
+	&__img
+		position: relative
+		margin-right: 20px
+		font-size: 0
+		max-width: 200px 
+		float: left
+		img
+			max-width: 100%
+	&__in
+		+georgia
+		padding: 0 0 0 220px
+		display: block
+		+r(440)
+			padding: 20px 0 0 0
+			width: 100%
+			clear: both
+	&__link
+		margin-bottom: 8px
+		a
+			+fs(13)
+			color: #4cb3bc 
+			+ttu
+			line-height: 20px
+			display: inline-block
+			&:hover
+				text-decoration: underline
+	&__title
+		margin-bottom: 10px
+		a
+			+fs(20)
+			color: #000000
+			line-height: 25px
+			display: inline-block
+			&:hover
+				color: #f96443 
+		span
+			+fs(16)
+			color: #27333a
+			line-height: 1.25
+			display: block
+			padding: 5px 0 0 0  
+	&__date
+		+fs(16)
+		line-height: 18px
+		color: #a3a3a3 
+		font-style: italic
+
+.row
+	&_mod
+		padding: 20px 0 0 0 
+.box
+	padding: 20px 20px 10px
+	+georgia
+	position: relative
+	max-width: 480px 
+	&__inner
+		padding-bottom: 27px
+		border-bottom: 1px solid #d1d1d1 
+	&__heading
+		position: absolute
+		top: 0
+		left: 0
+		padding: 15px 20px 17px 40px
+		background: #25c4c7  
+		color: #fff
+		+fs(24)
+		line-height: 18px 
+		display: inline-block
+		+georgia
+		font-weight: normal
+	&__img
+		width: 100%
+		+fs(0)
+		text-align: center
+		display: block
+		margin-bottom: 20px
+		img
+			max-width: 100%
+	h2
+		+fs(24)
+		line-height: 1
+		font-style: italic
+		margin-bottom: 7px
+		a
+			color: #000000 
+			&:hover
+				color: #f96443 
+	p
+		+fs(20)
+		line-height: 1.25
+		color: #27333a 
+		margin-bottom: 10px
+	&__date
+		color: #a3a3a3
+		+fs(16)
+		line-height: 1.1
+		font-style: italic 
+		margin-left: 2px
+		
+.comment
+	max-width: 480px
+	padding: 20px 20px 10px
+	+georgia
+	position: relative
+	&__heading
+		position: absolute
+		top: 0
+		left: 0
+		padding: 15px 20px 17px 40px
+		background: #25c4c7  
+		color: #fff
+		+fs(24)
+		line-height: 18px 
+		display: inline-block
+		+georgia
+		font-weight: normal
+	&__inner
+		background: #f2f2f2
+		padding: 55px 20px 20px
+	&__person
+		text-align: left
+		+clr
+		display: block
+		min-height: 70px
+		margin-bottom: 20px
+	&__avatar
+		width: 70px
+		height: 70px
+		margin-right: 20px
+		float: left
+		+border-radius(50%)
+		overflow: hidden
+		img
+			max-width: 100%
+			min-height: 100%
+	&__info
+		+fs(16)
+		color: #a3a3a3
+		line-height: 1.1 
+		font-style: italic
+		padding-left: 90px
+		display: block
+		padding-top: 20px
+		max-width: 360px
+	h2
+		+fs(24)
+		line-height: 1
+		font-style: italic
+		margin-bottom: 15px
+		a
+			color: #000000 
+			&:hover
+				color: #f96443 
+	p
+		+fs(20)
+		line-height: 1.25
+		color: #27333a 
+		margin-bottom: 10px
+	&__date
+		color: #a3a3a3
+		+fs(16)
+		line-height: 1.1
+		font-style: italic 
+		margin-left: 2px
+
+.more
+	text-align: center
+	max-width: 480px
+	padding: 10px 20px 50px
+	&_mod
+		padding: 20px 20px 50px
+.footer
+	padding: 20px 20px 30px
+	background: #f2f2f2
+.logo_bot
+	+s(logo-bot)
+	display: inline-block
+	margin-bottom: 15px
+.copyright
+	p
+		+georgia
+		+fs(16)
+		line-height: 1.25
+		color: #737373 
+		
+
+.menu, .projects
+	position: fixed
+	top: 74px
+	left: 0
+	bottom: 0
+	background: #f3f3f3
+	+tr(transform .4s)
+	overflow: auto
+	-webkit-overflow-scrolling: touch
+	z-index: 9999
+	//height: 100% 
+	padding-bottom: 20px
+	&.is-open
+		+transform(translateX(0px) translate3d(0,0,0))
+.menu
+	width: 310px
+	+transform(translateX(-310px))
+	background: #fff
+	&__inner
+		//height: 100%
+		width: 100%
+		overflow: auto
+	.menu__in
+		background: #FFF 
+		width: 100%
+	&__heading
+		+fs(13)
+		+georgia
+		color: #a3a3a3
+		border-bottom: 1px solid #d1d1d1
+		margin: 20px 20px 0 
+		display: block
+		+ttu
+		padding: 15px 0 
+	.menu__title
+		display: block
+		+fs(20)
+		+f
+		color: #1e1919 
+		margin-bottom: 15px
+		span
+			display: table-cell
+			height: 60px
+			vertical-align: middle
+			&:first-child
+				width: 60px
+				text-align: center
+		.icon
+			position: relative
+			top: -2px
+			font-size: 24px
+		&.is-active
+			color: #FFF 
+			.icon
+				top: -5px
+				+rotate(180)
+				color: #fff 
+	.menu__list
+		padding-bottom: 10px 
+		margin-top: -1px
+		li
+			position: relative
+			width: 100%
+		a
+			+fs(24)
+			+georgia
+			line-height: 60px
+			color: #000000
+			display: block
+			padding: 0 20px 
+			&:hover
+				background: #25c4c7
+				color: #fff  
+	&__box
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding: 10px 35px 10px 20px 
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__button
+		height: 52px
+		border: 1px solid #25c4c7
+		+vertical
+		display: inline-block
+		padding: 0 20px 
+		color: #4cb3bc
+		margin: 10px 0
+		&_mod
+			width: 100%
+			margin: 30px 0 10px
+			i
+				background: url(../img/svg/monic.svg) no-repeat 50% 50%
+				display: inline-block
+				vertical-align: middle
+				width: 46px
+				height: 35px 
+				margin-right: 15px
+		span
+			+fs(13.05)
+			+georgia
+			+ttu
+			display: inline-block
+			vertical-align: middle
+		&:hover
+			background: #25c4c7
+			color: #fff  
+			i
+				background: url(../img/svg/monic-hov.svg) no-repeat 50% 50%
+	&__link
+		width: 52px
+		height: 52px
+		+vertical
+		display: inline-block
+		vertical-align: top
+		border: 1px solid #25c4c7
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-vk
+				+svg(vk, 12, 16)
+			&.is-fb
+				+svg(fb, 9, 18)
+			&.is-twitter
+				+svg(twitter, 18, 16)
+			&.is-od
+				+svg(od, 12, 20)
+		&:hover
+			background: #25c4c7
+			color: #fff  
+			i
+				&.is-vk
+					+svg(vk-hov, 12, 16)
+				&.is-fb
+					+svg(fb-hov, 9, 18)
+				&.is-twitter
+					+svg(twitter-hov, 18, 16)
+				&.is-od
+					+svg(od-hov, 12, 20)
+	&__footer
+		padding: 20px
+	&__copy
+		+fs(16)
+		color: #727272
+		line-height: 25px
+		position: relative
+		margin: 2px
+		&:before
+			position: absolute
+			content: "©"
+			top: 0
+			left: -15px
+			+fs(14)
+	&__made
+		+fs(16)
+		color: #727272
+		line-height: 60px
+		i
+			display: inline-block
+			+svg(wow, 51, 13)
+.projects
+	max-width: 480px
+	width: 100%
+	+transform(translateX(-480px))
+	&__inner
+		//height: 100%
+		overflow: auto
+	.projects__head
+		padding: 12px 20px 12px 80px
+		+clr
+		background: #fff 
+		+r(440)
+			padding-left: 40px
+	.projects__title
+		float: left
+		font-size: 35px
+		+fn
+		+fs(35)
+		color: #00C7FF
+	.projects__close
+		float: right
+		margin-top: 11px
+		font-size: 0
+		.icon
+			font-size: 22px
+			color: #D7D7D7 
+	.projects__type
+		position: relative
+		padding: 7px 10px 7px 80px
+		color: #FFF
+		font-size: 35px	
+		cursor: pointer
+		background: #00c7ff 
+		+fn
+		+r(440)
+			padding-left: 40px
+		&.is-active
+			background: #000 
+			.icon
+				top: 12px
+				+rotate(180)
+		.icon
+			position: absolute
+			top: 15px
+			left: 40px
+			font-size: 30px
+			+r(440)
+				left: 10px
+	.projects__list
+		display: none
+		padding: 0 20px
+		background: #fff 
+		li
+			border-top: 1px solid #d7d7d7
+			&:first-child
+				border: none
+		a
+			display: block
+			margin: 0 -20px
+			padding: 17px 20px 17px 80px
+			font-size: 20px
+			font-weight: 700 
+			+f
+			color: #000
+	&__footer
+		padding: 20px
+	&__buttons
+		display: block
+	&__button
+		margin: 10px
+		+border-radius(4px)
+		height: 60px
+		padding: 0 20px
+		+fn
+		+fs(35)
+		color: #fff
+		position: relative
+		&:hover
+			background-color: #221f1f 
+		&:active
+			top: 1px
+		span
+			background: url(../img/svg/bubble.svg) no-repeat 51% 50%
+			width: 33px
+			height: 36px 
+			+f
+			font-weight: 700 
+			+fs(18)
+			display: inline-block
+			vertical-align: middle
+			margin-left: 19px
+	&__profile
+		background-color: #6B6B6B
+	&__enter
+		background-color: #ccc
+	&__bottom
+		text-align: left
+		padding: 20px 0 0 0 
+	&__copy
+		+fs(16)
+		line-height: 25px
+		color: #727272
+		+f 
+		position: relative
+		margin: 2px
+		&:before
+			position: absolute
+			content: "©"
+			top: 0
+			left: -15px
+			+fs(14)
+	&__logo
+		display: block
+		width: 104px 
+		height: 29px
+		margin: 2px 3px 13px 3px
+		img
+			width: 100%
+	&__years
+		float: right
+		+fs(25)
+		color: #6b6b6b
+		+fn 
+.search
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	padding: 12px 20px 12px 19px
+	background: #4e4d4d 
+	display: none
+	form
+		+vertical
+		text-align: left
+		+fs(0)
+		position: relative
+		display: block
+		padding: 0 63px 0 51px
+		max-width: 441px
+		margin: 0 auto
+	&__close
+		+svg(close, 27, 27)
+		position: absolute
+		top: 12px
+		left: 0
+	&__keyword
+		+f
+		color: #000
+		+fs(20)
+		padding: 12px 10px
+		width: 100%
+		+box
+		+border-radius(4px)
+		+placeholder-color(#a3a3a3)
+	&__submit
+		position: absolute
+		top: 0
+		right: 0
+		width: 50px
+		height: 50px
+		margin-left: 13px
+		background: #25c4c7
+		border-radius: 4px 
+		&:hover
+			background: #13989b 
+		.icon
+			font-size: 32px
+			color: #fff
+
+
+//inner
+.date
+	+fs(16)
+	color: #a3a3a3
+	+georgia
+	font-style: italic
+	line-height: 18px
+.way
+	padding: 20px 20px 15px
+	.date
+		float: right
+	ul
+		display: inline-block
+		+fs(0)
+		li
+			color: #a3a3a3 
+			+fs(13)
+			+georgia
+			line-height: 18px
+			display: inline-block
+			span
+				margin: 0 6px 
+			a
+				+fs(13)
+				+georgia
+				color: #a3a3a3
+				line-height: 18px
+				+ttu
+				font-weight: normal
+				letter-spacing: 0.75px 
+			&.is-active
+				a
+					color: #25c4c7
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+				&:after
+					display: none
+.author
+	+vertical
+	text-align: left
+	&_mod
+		margin-bottom: 15px
+	&__avatar
+		display: inline-block
+		vertical-align: middle
+		width: 70px
+		height: 70px
+		+border-radius(50%)
+		overflow: hidden
+		margin-right: 20px
+		img
+			width: 100%
+	&__name
+		+fs(16)
+		+georgia
+		font-style: italic
+		line-height: 18px
+		color: #a3a3a3
+		display: inline-block
+		vertical-align: middle 
+.footnote
+	margin-top: 5px
+	padding: 25px 15px 25px 20px
+	background: #f2f2f2 
+	margin-bottom: 20px
+	p
+		+fs(16)
+		line-height: 20px
+	.author
+		margin-bottom: 15px
+		&__name
+			max-width: 200px
+.quote
+	margin: 20px 0 
+	padding: 0px 14px 0px 45px
+	+georgia
+	position: relative
+	p
+		+fs(16) 
+		font-style: italic
+		color: #25c4c7
+	i
+		position: absolute
+		top: 3px
+		left: 0
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			content: "“"
+			+fs(60)
+			line-height: 30px
+			color: #25c4c7
+			font-weight: 700
+			font-style: normal
+.dialog
+	padding: 15px 0 5px
+	p
+		margin-bottom: 15px
+		+georgia
+		+fs(20)
+		line-height: 25px
+		&.dialog-first
+			color: #7b909d 
+		&.dialog-second
+			color: #27333a 
+.footnote-thing
+	padding: 30px 20px
+	margin-top: 5px 
+	background: #f2f2f2
+	+clr
+	margin-bottom: 15px
+	img
+		width: 120px
+		height: 120px
+		float: left
+		margin-right: 18px
+	p
+		+fs(16)
+		+georgia
+		line-height: 20px
+		color: #27333a
+		strong
+			font-weight: 700
+		&.thing__title
+			margin-bottom: 25px
+.subtitle
+	+fs(13)
+	line-height: 80px
+	color: #a3a3a3
+	+georgia 
+	+ttu
+	display: block
+.social
+	border-top: 1px solid #d1d1d1
+	padding-bottom: 10px  
+	&_mod
+		border-top: none
+	&__box
+		max-width: 268px
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__link
+		width: 52px
+		height: 52px
+		+vertical
+		display: inline-block
+		vertical-align: top
+		border: 1px solid #25c4c7
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-vk
+				+svg(vk, 12, 16)
+			&.is-fb
+				+svg(fb, 9, 18)
+			&.is-twitter
+				+svg(twitter, 18, 16)
+			&.is-od
+				+svg(od, 12, 20) 
+		&:hover
+			background: #25c4c7
+			color: #fff  
+			i
+				&.is-vk
+					+svg(vk-hov, 12, 16)
+				&.is-fb
+					+svg(fb-hov, 9, 18)
+				&.is-twitter
+					+svg(twitter-hov, 18, 16)
+				&.is-od
+					+svg(od-hov, 12, 20)
+.comments
+	p
+		+georgia
+		+fs(16)
+		line-height: 20px
+		color: #505050  
+		margin-bottom: 25px
+	&__my
+		+clr
+		textarea
+			width: 100%
+			height: 122px
+			border: 1px solid #d7d7d7
+			resize: none
+			margin-bottom: 20px
+			+box
+			padding: 8px
+			+fs(20)
+			+georgia
+			line-height: 25px
+			color: #010101 
+			&:focus
+				border-color: #25c4c7
+	&__submit
+		width: 133px
+		height: 52px
+		border: 1px solid #25c4c7
+		color: #4cb3bc
+		+georgia
+		+fs(13.05)
+		line-height: 20.07px  
+		float: right
+		background: none
+		+ttu
+		&.is-mod
+			background: #25c4c7 
+			color: #fff 
+		&:hover
+			background: #13989b
+			color: #fff 
+	&__profile
+		+vertical
+		text-align: left
+		margin-bottom: 20px
+	&__avatar
+		display: inline-block
+		vertical-align: middle
+		+border-radius(50%)
+		overflow: hidden
+		margin-right: 20px
+	&__info
+		display: inline-block
+		vertical-align: middle
+		+fs(16)
+		+georgia
+		line-height: 20px
+		font-style: italic
+	&__name
+		color: #000000
+	&__date
+		color: #a3a3a3 
+	&__bottom
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding-bottom: 30px 
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__ans
+		+fs(16)
+		line-height: 20px
+		color: #25c4c7
+		+georgia 
+		display: inline-block
+		vertical-align: middle
+		font-style: italic
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&__like
+		display: inline-block
+		vertical-align: middle
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		width: 190px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+		.like
+			width: 75px
+			text-align: justify
+			+fs(0.1)
+			word-spacing: 0px
+			display: inline-block
+			vertical-align: middle
+			&:after
+				content: ""
+				width: 100%
+				display: inline-block 
+			&:hover
+				&.i-like
+					span
+						color: #25c4c7
+					i
+						background: url(../img/svg/i-like-hov.svg) no-repeat center center
+						+cover
+				&.i-dont-like
+					span
+						color: #8d8d8d
+					i
+						background: url(../img/svg/i-dont-like-hov.svg) no-repeat center center
+						+cover 
+			i
+				display: inline-block
+				vertical-align: middle
+				width: 39px
+				height: 33px
+			&.i-like
+				i
+					background: url(../img/svg/i-like.svg) no-repeat center center
+					+cover
+			&.i-dont-like
+				i
+					background: url(../img/svg/i-dont-like.svg) no-repeat center center
+					+cover
+			span
+				vertical-align: middle
+				+fs(20)
+				line-height: 10px
+				+georgia
+				color: #a7a7a7
+				display: inline-block
+				width: 25px
+				text-align: left
+				margin-left: 10px
+	&__ppl
+		padding: 20px 0 0 0 
+	&__second
+		border-top: 1px solid #d1d1d1
+		margin: 0 0 0 30px
+.best
+	border-top: 1px solid #d1d1d1
+	padding-bottom: 20px
+	.item
+		margin-bottom: 30px
+.article
+	&__inner
+		padding: 0 20px
+	p
+		+georgia
+	&__main-img
+		width: 100%
+		margin-bottom: 17px
+	&__title
+		+fs(24)
+		+georgia
+		font-style: italic
+		line-height: 18px
+		color: #000000  
+		margin-bottom: 19px
+	&__box
+		p
+			+fs(20)
+			line-height: 25px
+			padding-bottom: 20px 
+			padding-top: 10px
+			color: #27333a
+			strong
+				font-weight: 700 
+			a
+				color: #25c4c7
+				text-decoration: underline
+				font-weight: normal
+				&:hover
+					text-decoration: none
+	&__img
+		width: 100%
+		margin: 15px 0
+		float: left
+		+clr
+		img
+			width: 100%
+		span
+			display: block
+			padding: 2px 
+			+fs(16)
+			line-height: 18px
+			color: #a3a3a3
+			+georgia
+			font-style: italic 
+	&__list
+		p, li
+			+fs(20)
+			color: #27333a
+			line-height: 25px
+			+georgia
+		ul
+			padding: 15px 0 15px 0 
+		li
+			padding: 7px 0 8px 25px
+			position: relative
+			&:before
+				position: absolute
+				top: 15px
+				left: 0
+				content: "" 
+				background: #25c4c7
+				width: 8px
+				height: 8px
+				+border-radius(50%) 
+
+//shop
+.inner-title
+	+fs(24)
+	color: #25c4c7
+	position: relative
+	+georgia
+	&:before
+		position: absolute
+		left: 0
+		right: 48px
+		border-bottom: 1px solid #b8e8e9
+		content: "" 
+		bottom: 14px
+	span
+		background: white
+		padding: 0 10px 0 0
+		position: relative
+		z-index: 9
+	i
+		+svg(bird, 60, 32)
+		display: inline-block
+		float: right
+.shop
+	&__inner
+		padding: 0 20px
+	&__heading
+		+fs(24)
+		+georgia
+		line-height: 18px
+		color: #000000
+		font-style: italic
+		margin-bottom: 30px 
+		padding-top: 15px
+	&__item
+		border-top: 1px solid #b8e8e9
+		padding-top: 20px
+		padding-bottom: 25px 
+		+georgia
+		&-first
+			border-top: none
+		img
+			margin-bottom: 20px
+			width: 100%
+		h2
+			+fs(24)
+			font-style: italic
+			line-height: 18px
+			color: #000000
+			margin-bottom: 10px
+		p
+			color: #27333a
+			+fs(20)
+			line-height: 25px 
+			margin-bottom: 15px
+
+.detail
+	+georgia
+	margin-bottom: 45px
+	img
+		width: 100%
+		margin-bottom: 20px
+	p
+		+fs(20)
+		line-height: 25px
+		color: #27333a
+		margin-bottom: 20px
+	a
+		+fs(13)
+		+ttu
+		color: #4cb3bc
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+//
+.col
+	border-top: 1px solid #d1d1d1 
+	padding-bottom: 25px
+	padding-top: 30px
+	&_first
+		border-top: 1px solid #b8e8e9 
+	h2
+		+fs(24)
+		line-height: 25px
+		color: #000 
+		font-style: italic
+		margin-bottom: 30px
+		+georgia
+	&__profile
+		margin-bottom: 15px
+		padding-top: 5px
+		+clr
+	&__avatar
+		width: 70px
+		height: 70px
+		float: left
+		overflow: hidden
+		+border-radius(50%)
+		margin-right: 20px
+		img
+			width: 100%
+	&__info
+		+fs(16)
+		line-height: 18px
+		color: #a3a3a3
+		font-style: italic
+		+georgia
+		display: block
+		padding: 15px 0 0 0 
+	p
+		+fs(20)
+		line-height: 25px
+		color: #27333a
+		+georgia 
+	&_mod
+		border-top: 1px solid #b8e8e9
+		&.is-first
+			border-top: none
+		h2
+			margin-bottom: 15px
+		.date
+			margin-bottom: 20px
+			display: block
+			padding-left: 3px
 
 
 
