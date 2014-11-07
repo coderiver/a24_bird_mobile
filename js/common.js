@@ -47,6 +47,8 @@ head.ready(function() {
 	});
 	projects_close.on('click', function () {
 		btn_projects.trigger('click');
+		projects.toggleClass('is-open');
+		container.toggleClass('is-moved-projects');
 	});
 
 	// touch

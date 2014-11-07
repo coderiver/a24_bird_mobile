@@ -170,10 +170,10 @@ button { background: none; }
 .btn-search .icon { font-size: 32px; color: white; }
 
 .logo { float: left; height: 47px; font-size: 10.98px; font-size: 1.098rem; color: #a3a3a3; position: relative; margin-top: 4px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
-@media only screen and (max-width: 440px) { .logo { display: none; } }
 .logo span { font-family: "pfagoraslabpro-italic", Arial, sans-serif; position: absolute; bottom: 0; left: 0; }
 
 .logo-a42 { float: right; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
+@media only screen and (max-width: 440px) { .logo-a42 { display: none; } }
 .logo-a42 .icon { font-size: 50px; }
 
 .slider { position: relative; max-width: 480px; width: 100%; margin: 0 auto; overflow: hidden; }
@@ -484,3 +484,9 @@ button { background: none; }
 .col_mod.is-first { border-top: none; }
 .col_mod h2 { margin-bottom: 15px; }
 .col_mod .date { margin-bottom: 20px; display: block; padding-left: 3px; }
+
+.logo-btn { background: #00c7ff; width: 100%; height: 55px; margin: 20px auto 0; text-align: center; font-size: 0; display: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.logo-btn:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+@media only screen and (max-width: 440px) { .logo-btn { display: block; } }
+.logo-btn span { font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 20px; font-size: 2rem; color: white; text-transform: uppercase; display: inline-block; vertical-align: middle; }
+.logo-btn img { width: 102px; height: 29px; display: inline-block; vertical-align: middle; margin-left: 20px; }
