@@ -4,8 +4,9 @@ html
 body
 	-ms-overflow-y: auto
 	overflow-y: auto
-	-ms-overflow-x: hidden
-	overflow-x: hidden
+	// -ms-overflow-x: hidden
+	// overflow-x: hidden
+	min-width: 480px
 	&:after
 		content: "" 
 		position: fixed
@@ -23,7 +24,7 @@ body
 		height: 100%
 		// overflow: hidden
 		.con
-			+transform(translateX(310px))
+			// +transform(translateX(310px))
 		&:after
 			visibility: visible
 			opacity: 1
@@ -160,7 +161,7 @@ button
 	position: relative
 .con
 	margin: 0 auto
-	max-width: 480px
+	width: 480px
 	+transition(transform 0.4s)
 	+transform(translateX(0px) translate3d(0,0,0))
 // header
@@ -236,8 +237,7 @@ button
 .logo-a42
 	float: right
 	+user-select(none)
-	+r(440)
-		display: none
+	display: none
 	.icon
 		font-size: 50px
 
@@ -683,7 +683,7 @@ button
 		line-height: 60px
 		i
 			display: inline-block
-			+svg(wow, 51, 13)
+			+svg(wow, 51, 14)
 .projects
 	max-width: 480px
 	width: 100%
@@ -831,13 +831,14 @@ button
 		left: 0
 	&__keyword
 		+f
-		color: #000
+		color: #a3a3a3
 		+fs(20)
 		padding: 12px 10px
 		width: 100%
 		+box
 		+border-radius(4px)
-		+placeholder-color(#a3a3a3)
+		&:focus
+			color: #000 
 	&__submit
 		position: absolute
 		top: 0
@@ -1382,10 +1383,8 @@ button
 	height: 55px
 	margin: 20px auto 0
 	+vertical
-	display: none
 	+border-radius(4px)
-	+r(440)
-		display: block
+	display: block
 	span 
 		+fn
 		+fs(20)

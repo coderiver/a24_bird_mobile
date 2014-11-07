@@ -141,7 +141,7 @@ head.ready(function() {
  			slidesToShow: 1,
  			slidesToScroll: 1,
 			swipeToSlide: true,
-			touchThreshold: 100,
+			touchThreshold: 30,
  			slide: '.slider__item',
  			onInit: function() {
  				slider_all.text(slider_length);
