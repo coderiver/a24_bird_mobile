@@ -152,6 +152,8 @@ head.ready(function() {
  			}
  		});
  	};
+ 	$('.slick-next').slickNext();
+ 	$('.slick-prev').slickPrev();
  	//comments my
  	$('.comments__my textarea').focusin(function(event) {
  		/* Act on the event */

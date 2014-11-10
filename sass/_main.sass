@@ -7,6 +7,7 @@ body
 	// -ms-overflow-x: hidden
 	// overflow-x: hidden
 	min-width: 480px
+	width: 480px
 	&:after
 		content: "" 
 		position: fixed
@@ -147,10 +148,12 @@ button
 	+fs(13.05)
 	line-height: 20.07px
 	+georgia
-	border: 1px solid #25c4c7
 	display: inline-block
 	+ttu
 	+user-select(none)
+	border: 2px solid #25c4c7
+	+retina
+		border: 1px solid #25c4c7
 	&:hover
 		background: #25c4c7 
 		color: #fff 
@@ -314,20 +317,27 @@ button
 					opacity: 1
 	.slick-prev, .slick-next
 		position: absolute
-		top: 104px
-		z-index: 999
+		top: 0
+		z-index: 99999
 		cursor: pointer
 		+user-select(none)
+		display: block
+		width: 70px
+		height: 100%
 	.slick-prev
-		+svg(arr-left, 15, 48)
-		left: 21px
+		// +svg(arr-left, 15, 48)
+		background: url(../img/svg/arr-left.svg) no-repeat 50% 35%
+		left: 0
 		&:active
-			+svg(arr-left-active, 15, 48)
+			// +svg(arr-left-active, 15, 48)
+			background: url(../img/svg/arr-left-active.svg) no-repeat 50% 35%
 	.slick-next
-		+svg(arr-right, 15, 48)
-		right: 21px
+		// +svg(arr-right, 15, 48)
+		background: url(../img/svg/arr-right.svg) no-repeat 50% 35%
+		right: 0
 		&:active
-			+svg(arr-right-active, 15, 48)
+			// +svg(arr-right-active, 15, 48)
+			background: url(../img/svg/arr-right-active.svg) no-repeat 50% 35%
 
 //list
 .list
@@ -608,15 +618,18 @@ button
 			display: inline-block 
 	&__button
 		height: 52px
-		border: 1px solid #25c4c7
 		+vertical
 		display: inline-block
 		padding: 0 20px 
 		color: #4cb3bc
 		margin: 10px 0
+		border: 2px solid #25c4c7
+		+retina
+			border: 1px solid #25c4c7
 		&_mod
 			width: 100%
 			margin: 30px 0 10px
+			padding: 0
 			i
 				background: url(../img/svg/monic.svg) no-repeat 50% 50%
 				display: inline-block
@@ -641,7 +654,9 @@ button
 		+vertical
 		display: inline-block
 		vertical-align: top
-		border: 1px solid #25c4c7
+		border: 2px solid #25c4c7
+		+retina
+			border: 1px solid #25c4c7
 		i
 			display: inline-block
 			vertical-align: middle
@@ -867,6 +882,7 @@ button
 	line-height: 18px
 .way
 	padding: 20px 20px 15px
+	+clr
 	.date
 		float: right
 	ul
@@ -878,6 +894,7 @@ button
 			+georgia
 			line-height: 18px
 			display: inline-block
+			float: left
 			span
 				margin: 0 6px 
 			a
@@ -993,8 +1010,7 @@ button
 	+ttu
 	display: block
 .social
-	border-top: 1px solid #d1d1d1
-	padding-bottom: 10px  
+	padding-bottom: 10px 
 	&_mod
 		border-top: none
 	&__box
@@ -1012,7 +1028,9 @@ button
 		+vertical
 		display: inline-block
 		vertical-align: top
-		border: 1px solid #25c4c7
+		border: 2px solid #25c4c7
+		+retina
+			border: 1px solid #25c4c7 
 		i
 			display: inline-block
 			vertical-align: middle
@@ -1048,7 +1066,7 @@ button
 		textarea
 			width: 100%
 			height: 122px
-			border: 1px solid #d7d7d7
+			border: 2px solid #d7d7d7
 			resize: none
 			margin-bottom: 20px
 			+box
@@ -1057,12 +1075,13 @@ button
 			+georgia
 			line-height: 25px
 			color: #010101 
+			+retina
+				border: 1px solid #d7d7d7
 			&:focus
 				border-color: #25c4c7
 	&__submit
 		width: 133px
 		height: 52px
-		border: 1px solid #25c4c7
 		color: #4cb3bc
 		+georgia
 		+fs(13.05)
@@ -1070,6 +1089,9 @@ button
 		float: right
 		background: none
 		+ttu
+		border: 2px solid #25c4c7
+		+retina
+			border: 1px solid #25c4c7 
 		&.is-mod
 			background: #25c4c7 
 			color: #fff 
@@ -1349,7 +1371,6 @@ button
 		float: left
 		overflow: hidden
 		+border-radius(50%)
-		margin-right: 20px
 		img
 			width: 100%
 	&__info
@@ -1359,7 +1380,7 @@ button
 		font-style: italic
 		+georgia
 		display: block
-		padding: 15px 0 0 0 
+		padding: 15px 0 0 90px 
 	p
 		+fs(20)
 		line-height: 25px
