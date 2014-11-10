@@ -528,17 +528,19 @@ button
 	left: 0
 	bottom: 0
 	background: #f3f3f3
-	+tr(transform .4s)
+	+tr(left .4s)
 	overflow: auto
 	-webkit-overflow-scrolling: touch
 	z-index: 9999
 	//height: 100% 
 	padding-bottom: 20px
 	&.is-open
-		+transform(translateX(0px) translate3d(0,0,0))
+		// +transform(translateX(0px) translate3d(0,0,0))
+		left: 0
 .menu
 	width: 310px
-	+transform(translateX(-310px))
+	// +transform(translateX(-310px))
+	left: -100%
 	background: #fff
 	&__inner
 		//height: 100%
@@ -687,7 +689,8 @@ button
 .projects
 	max-width: 480px
 	width: 100%
-	+transform(translateX(-480px))
+	// +transform(translateX(-480px))
+	left: -100%
 	&__inner
 		//height: 100%
 		overflow: auto
@@ -1108,7 +1111,7 @@ button
 		line-height: 20px
 		color: #25c4c7
 		+georgia 
-		display: inline-block
+		display: inline
 		vertical-align: middle
 		font-style: italic
 		text-decoration: underline
