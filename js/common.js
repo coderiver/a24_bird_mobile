@@ -1,5 +1,5 @@
 head.ready(function() {
-
+	
 	var btn_menu = $('.js-btn-menu'),
 			btn_search = $('.js-btn-search'),
 			btn_projects = $('.js-btn-projects'),
