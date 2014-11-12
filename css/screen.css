@@ -410,7 +410,7 @@ button { background: none; }
 .comments__submit { width: 133px; height: 52px; color: #4cb3bc; font-family: Georgia, Arial, sans-serif; font-size: 13.05px; font-size: 1.305rem; line-height: 20.07px; float: right; background: none; text-transform: uppercase; border: 2px solid #25c4c7; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .comments__submit { border: 1px solid #25c4c7; } }
 .comments__submit.is-mod { background: #25c4c7; color: white; }
-.comments__submit:hover { background: #13989b; color: white; }
+.comments__submit:hover { background: #13989b; border-color: #13989b; color: white; }
 .comments__profile { text-align: center; font-size: 0; text-align: left; margin-bottom: 20px; }
 .comments__profile:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .comments__avatar { display: inline-block; vertical-align: middle; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 20px; }
@@ -480,8 +480,8 @@ button { background: none; }
 .col h2 { font-size: 24px; font-size: 2.4rem; line-height: 25px; color: black; font-style: italic; margin-bottom: 30px; font-family: Georgia, Arial, sans-serif; }
 .col__profile { margin-bottom: 15px; padding-top: 5px; *zoom: 1; }
 .col__profile:after { content: " "; display: table; clear: both; }
-.col__avatar { width: 70px; height: 70px; float: left; overflow: hidden; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-.col__avatar img { width: 100%; }
+.col__avatar { width: 70px; height: 70px; float: left; overflow: hidden; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: relative; }
+.col__avatar img { width: 100%; display: block; position: absolute; top: 0; left: 0; }
 .col__info { font-size: 16px; font-size: 1.6rem; line-height: 18px; color: #a3a3a3; font-style: italic; font-family: Georgia, Arial, sans-serif; display: block; padding: 15px 0 0 90px; }
 .col p { font-size: 20px; font-size: 2rem; line-height: 25px; color: #27333a; font-family: Georgia, Arial, sans-serif; }
 .col_mod { border-top: 1px solid #b8e8e9; }

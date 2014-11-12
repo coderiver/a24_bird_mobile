@@ -1097,6 +1097,7 @@ button
 			color: #fff 
 		&:hover
 			background: #13989b
+			border-color: #13989b 
 			color: #fff 
 	&__profile
 		+vertical
@@ -1371,8 +1372,13 @@ button
 		float: left
 		overflow: hidden
 		+border-radius(50%)
+		position: relative
 		img
 			width: 100%
+			display: block
+			position: absolute
+			top: 0
+			left: 0
 	&__info
 		+fs(16)
 		line-height: 18px
