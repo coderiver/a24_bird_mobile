@@ -355,14 +355,15 @@ button { background: none; }
 .author { text-align: center; font-size: 0; text-align: left; }
 .author:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .author_mod { margin-bottom: 15px; }
-.author__avatar { display: inline-block; vertical-align: middle; width: 70px; height: 70px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 20px; }
+.author__avatar { float: left; width: 70px; height: 70px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 20px; }
 .author__avatar img { width: 100%; }
-.author__name { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; font-style: italic; line-height: 18px; color: #a3a3a3; display: inline-block; vertical-align: middle; }
+.author__name { padding-left: 90px; color: #a3a3a3; height: 70px; text-align: center; font-size: 0; text-align: left; }
+.author__name:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.author__name span { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; font-style: italic; display: inline-block; vertical-align: middle; line-height: 18px; }
 
 .footnote { margin-top: 5px; padding: 25px 15px 25px 20px; background: #f2f2f2; margin-bottom: 20px; }
 .footnote p { font-size: 16px; font-size: 1.6rem; line-height: 20px; }
 .footnote .author { margin-bottom: 15px; }
-.footnote .author__name { max-width: 200px; }
 
 .quote { margin: 20px 0; padding: 0px 14px 0px 45px; font-family: Georgia, Arial, sans-serif; position: relative; }
 .quote p { font-size: 16px; font-size: 1.6rem; font-style: italic; color: #25c4c7; }
@@ -377,7 +378,7 @@ button { background: none; }
 .footnote-thing { padding: 30px 20px; margin-top: 5px; background: #f2f2f2; *zoom: 1; margin-bottom: 15px; }
 .footnote-thing:after { content: " "; display: table; clear: both; }
 .footnote-thing img { width: 120px; height: 120px; float: left; margin-right: 18px; }
-.footnote-thing p { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; color: #27333a; }
+.footnote-thing p { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; color: #27333a; display: table; }
 .footnote-thing p strong { font-weight: 700; }
 .footnote-thing p.thing__title { margin-bottom: 25px; }
 
@@ -413,8 +414,11 @@ button { background: none; }
 .comments__submit:hover { background: #13989b; border-color: #13989b; color: white; }
 .comments__profile { text-align: center; font-size: 0; text-align: left; margin-bottom: 20px; }
 .comments__profile:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.comments__avatar { display: inline-block; vertical-align: middle; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 20px; }
-.comments__info { display: inline-block; vertical-align: middle; font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; font-style: italic; }
+.comments__avatar { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; margin-right: 20px; float: left; width: 50px; height: 50px; }
+.comments__avatar img { width: 100%; }
+.comments__info { font-style: italic; height: 50px; text-align: center; font-size: 0; text-align: left; padding-left: 70px; }
+.comments__info:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.comments__info span { display: inline-block; vertical-align: middle; font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; }
 .comments__name { color: black; }
 .comments__date { color: #a3a3a3; }
 .comments__bottom { text-align: justify; font-size: 0.1px; font-size: 0.01rem; word-spacing: 0px; padding-bottom: 30px; }
@@ -482,7 +486,9 @@ button { background: none; }
 .col__profile:after { content: " "; display: table; clear: both; }
 .col__avatar { width: 70px; height: 70px; float: left; overflow: hidden; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: relative; }
 .col__avatar img { width: 100%; display: block; position: absolute; top: 0; left: 0; }
-.col__info { font-size: 16px; font-size: 1.6rem; line-height: 18px; color: #a3a3a3; font-style: italic; font-family: Georgia, Arial, sans-serif; display: block; padding: 15px 0 0 90px; }
+.col__info { display: block; text-align: center; font-size: 0; padding: 0 0 0 90px; height: 70px; text-align: left; }
+.col__info:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.col__info span { display: inline-block; vertical-align: middle; font-size: 16px; font-size: 1.6rem; line-height: 18px; color: #a3a3a3; font-style: italic; font-family: Georgia, Arial, sans-serif; }
 .col p { font-size: 20px; font-size: 2rem; line-height: 25px; color: #27333a; font-family: Georgia, Arial, sans-serif; }
 .col_mod { border-top: 1px solid #b8e8e9; }
 .col_mod.is-first { border-top: none; }

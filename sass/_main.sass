@@ -918,8 +918,7 @@ button
 	&_mod
 		margin-bottom: 15px
 	&__avatar
-		display: inline-block
-		vertical-align: middle
+		float: left
 		width: 70px
 		height: 70px
 		+border-radius(50%)
@@ -928,13 +927,18 @@ button
 		img
 			width: 100%
 	&__name
-		+fs(16)
-		+georgia
-		font-style: italic
-		line-height: 18px
-		color: #a3a3a3
-		display: inline-block
-		vertical-align: middle 
+		padding-left: 90px
+		color: #a3a3a3 
+		height: 70px
+		+vertical
+		text-align: left
+		span
+			+fs(16)
+			+georgia
+			font-style: italic
+			display: inline-block
+			vertical-align: middle
+			line-height: 18px
 .footnote
 	margin-top: 5px
 	padding: 25px 15px 25px 20px
@@ -945,8 +949,6 @@ button
 		line-height: 20px
 	.author
 		margin-bottom: 15px
-		&__name
-			max-width: 200px
 .quote
 	margin: 20px 0 
 	padding: 0px 14px 0px 45px
@@ -997,6 +999,7 @@ button
 		+georgia
 		line-height: 20px
 		color: #27333a
+		display: table
 		strong
 			font-weight: 700
 		&.thing__title
@@ -1103,18 +1106,26 @@ button
 		text-align: left
 		margin-bottom: 20px
 	&__avatar
-		display: inline-block
-		vertical-align: middle
 		+border-radius(50%)
 		overflow: hidden
 		margin-right: 20px
+		float: left
+		width: 50px
+		height: 50px
+		img
+			width: 100%
 	&__info
-		display: inline-block
-		vertical-align: middle
-		+fs(16)
-		+georgia
-		line-height: 20px
 		font-style: italic
+		height: 50px
+		+vertical
+		text-align: left
+		padding-left: 70px
+		span
+			display: inline-block
+			vertical-align: middle
+			+fs(16)
+			+georgia
+			line-height: 20px
 	&__name
 		color: #000000
 	&__date
@@ -1379,13 +1390,19 @@ button
 			top: 0
 			left: 0
 	&__info
-		+fs(16)
-		line-height: 18px
-		color: #a3a3a3
-		font-style: italic
-		+georgia
 		display: block
-		padding: 15px 0 0 90px 
+		+vertical
+		padding: 0 0 0 90px 
+		height: 70px
+		text-align: left
+		span
+			display: inline-block
+			vertical-align: middle
+			+fs(16)
+			line-height: 18px
+			color: #a3a3a3
+			font-style: italic
+			+georgia
 	p
 		+fs(20)
 		line-height: 25px
