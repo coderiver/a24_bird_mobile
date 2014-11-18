@@ -378,7 +378,7 @@ button { background: none; }
 .footnote-thing { padding: 30px 20px; margin-top: 5px; background: #f2f2f2; *zoom: 1; margin-bottom: 15px; }
 .footnote-thing:after { content: " "; display: table; clear: both; }
 .footnote-thing img { width: 120px; height: 120px; float: left; margin-right: 18px; }
-.footnote-thing p { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; color: #27333a; display: table; }
+.footnote-thing p { font-size: 16px; font-size: 1.6rem; font-family: Georgia, Arial, sans-serif; line-height: 20px; color: #27333a; overflow: hidden; }
 .footnote-thing p strong { font-weight: 700; }
 .footnote-thing p.thing__title { margin-bottom: 25px; }
 
