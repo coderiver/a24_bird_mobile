@@ -50,7 +50,12 @@ head.ready(function() {
 		projects.toggleClass('is-open');
 		container.toggleClass('is-moved-projects');
 	});
-
+	$('.overlay').on('click', function() {
+		$('.js-projects, .js-menu').removeClass('is-open');
+		$('body').removeClass('is-moved-menu');
+		$('body').removeClass('is-moved-projects');
+		$('.js-btn-menu').removeClass('is-active');
+	});
 	// touch
 	$('body').swipe({
 	  swipeLeft: function(event, direction, distance, duration, fingerCount) {
