@@ -56,16 +56,6 @@ head.ready(function() {
 		$('body').removeClass('is-moved-projects');
 		$('.js-btn-menu').removeClass('is-active');
 	});
-	// touch
-	$('body').swipe({
-	  swipeLeft: function(event, direction, distance, duration, fingerCount) {
-	  	menu.removeClass('is-open');
-	  	projects.removeClass('is-open');
-	  	container.removeClass('is-moved-menu is-moved-projects');
-	  	btn_projects.removeClass('is-active')
-	  	btn_menu.removeClass('is-active')
-	  }
-	});
 
 	// search
 	btn_search.on('click', function () {
