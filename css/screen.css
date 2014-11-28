@@ -293,8 +293,9 @@ button { background: none; }
 .menu__link:hover i.is-twitter { background: url("../img/svg/twitter-hov.svg") no-repeat 0 0; -moz-background-size: 18px 16px 100%; -webkit-background-size: 18px 16px 100%; background-size: 18px 16px 100%; width: 18px; height: 16px; display: inline-block; }
 .menu__link:hover i.is-od { background: url("../img/svg/od-hov.svg") no-repeat 0 0; -moz-background-size: 12px 20px 100%; -webkit-background-size: 12px 20px 100%; background-size: 12px 20px 100%; width: 12px; height: 20px; display: inline-block; }
 .menu__footer { padding: 20px; }
-.menu__copy { font-size: 16px; font-size: 1.6rem; color: #727272; line-height: 25px; position: relative; margin: 2px; }
-.menu__copy:before { position: absolute; content: "©"; top: 0; left: -15px; font-size: 14px; font-size: 1.4rem; }
+.menu__copy { font-size: 16px; font-size: 1.6rem; color: #727272; line-height: 25px; position: relative; margin: 2px; margin-left: -15px; }
+.menu__copy:before { float: left; content: "©"; font-size: 14px; font-size: 1.4rem; margin-right: 5px; }
+.menu__copy p { overflow: hidden; }
 .menu__made { font-size: 16px; font-size: 1.6rem; color: #727272; line-height: 60px; }
 .menu__made i { display: inline-block; background: url("../img/svg/wow.svg") no-repeat 0 0; -moz-background-size: 51px 14px 100%; -webkit-background-size: 51px 14px 100%; background-size: 51px 14px 100%; width: 51px; height: 14px; display: inline-block; }
 
@@ -325,8 +326,9 @@ button { background: none; }
 .projects__profile { background-color: #6b6b6b; }
 .projects__enter { background-color: #cccccc; }
 .projects__bottom { text-align: left; padding: 20px 0 0 0; }
-.projects__copy { font-size: 16px; font-size: 1.6rem; line-height: 25px; color: #727272; font-family: "PT Sans", Arial, sans-serif; position: relative; margin: 2px; }
-.projects__copy:before { position: absolute; content: "©"; top: 0; left: -15px; font-size: 14px; font-size: 1.4rem; }
+.projects .menu__copy { font-size: 16px; font-size: 1.6rem; line-height: 25px; color: #727272; font-family: "PT Sans", Arial, sans-serif; position: relative; margin: 2px; margin-left: -15px; }
+.projects .menu__copy:before { float: left; content: "©"; font-size: 14px; font-size: 1.4rem; margin-right: 5px; }
+.projects .menu__copy p { overflow: hidden; }
 .projects__logo { display: block; width: 104px; height: 29px; margin: 2px 3px 13px 3px; }
 .projects__logo img { width: 100%; }
 .projects__years { float: right; font-size: 25px; font-size: 2.5rem; color: #6b6b6b; font-family: "PT Sans Narrow", Arial, sans-serif; }

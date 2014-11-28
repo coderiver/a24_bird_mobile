@@ -528,14 +528,6 @@ button
 	display: inline-block
 	margin-bottom: 15px
 .copyright
-	// &:before
-	// 	content: "©" 
-	// 	float: left
-	// 	margin-right: 5px
-	// 	+georgia
-	// 	+fs(16)
-	// 	line-height: 1.25
-	// 	color: #737373 
 	p
 		+georgia
 		+fs(16)
@@ -694,12 +686,14 @@ button
 		line-height: 25px
 		position: relative
 		margin: 2px
+		margin-left: -15px
 		&:before
-			position: absolute
+			float: left
 			content: "©"
-			top: 0
-			left: -15px
 			+fs(14)
+			margin-right: 5px
+		p
+			overflow: hidden
 	&__made
 		+fs(16)
 		color: #727272
@@ -808,19 +802,21 @@ button
 	&__bottom
 		text-align: left
 		padding: 20px 0 0 0 
-	&__copy
+	.menu__copy
 		+fs(16)
 		line-height: 25px
 		color: #727272
 		+f 
 		position: relative
 		margin: 2px
+		margin-left: -15px
 		&:before
-			position: absolute
+			float: left
 			content: "©"
-			top: 0
-			left: -15px
 			+fs(14)
+			margin-right: 5px
+		p
+			overflow: hidden
 	&__logo
 		display: block
 		width: 104px 
