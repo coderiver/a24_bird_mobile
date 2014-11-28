@@ -7,7 +7,7 @@ body
 	// -ms-overflow-x: hidden
 	// overflow-x: hidden
 	width: 480px
-	.overlay
+	&:after
 		content: "" 
 		position: fixed
 		top: 0
@@ -29,9 +29,7 @@ body
 		.con
 			height: 100%
 			overflow: hidden
-		.con
-			// +transform(translateX(310px))
-		.overlay
+		&:after
 			visibility: visible
 			opacity: 1
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic)
@@ -530,13 +528,19 @@ button
 	display: inline-block
 	margin-bottom: 15px
 .copyright
+	// &:before
+	// 	content: "©" 
+	// 	float: left
+	// 	margin-right: 5px
+	// 	+georgia
+	// 	+fs(16)
+	// 	line-height: 1.25
+	// 	color: #737373 
 	p
 		+georgia
 		+fs(16)
 		line-height: 1.25
 		color: #737373 
-		
-
 .menu, .projects
 	position: fixed
 	top: 74px
@@ -549,14 +553,11 @@ button
 	z-index: 9999
 	//height: 100% 
 	&.is-open
-		// +transform(translateX(0px) translate3d(0,0,0))
 		left: 0
 .menu
 	width: 310px
-	// +transform(translateX(-310px))
 	left: -100%
 	&__inner
-		//height: 100%
 		width: 100%
 		overflow: auto
 		background: #fff

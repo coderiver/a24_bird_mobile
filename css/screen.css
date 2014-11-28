@@ -68,11 +68,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 html { font-size: 62.5%; }
 
 body { -ms-overflow-y: auto; overflow-y: auto; width: 480px; }
-body .overlay { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
+body:after { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
 body.is-moved-projects, body.is-moved-menu { height: 100%; overflow: hidden; }
 body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; }
 body.is-moved-projects .con, body.is-moved-menu .con { height: 100%; overflow: hidden; }
-body.is-moved-projects .overlay, body.is-moved-menu .overlay { visibility: visible; opacity: 1; }
+body.is-moved-projects:after, body.is-moved-menu:after { visibility: visible; opacity: 1; }
 
 @font-face { font-family: "pfagoraslabpro-italic"; src: url("fonts/PFAgoraSlabPro-MediumItalic.eot"); src: url("fonts/PFAgoraSlabPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PFAgoraSlabPro-MediumItalic.woff") format("woff"), url("fonts/PFAgoraSlabPro-MediumItalic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
