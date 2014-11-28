@@ -23,6 +23,12 @@ body
 	&.is-moved-projects, &.is-moved-menu
 		height: 100%
 		overflow: hidden
+		.wrapper
+			overflow: hidden
+			height: 100%
+		.con
+			height: 100%
+			overflow: hidden
 		.con
 			// +transform(translateX(310px))
 		.overlay
@@ -542,7 +548,6 @@ button
 	-webkit-overflow-scrolling: touch
 	z-index: 9999
 	//height: 100% 
-	padding-bottom: 20px
 	&.is-open
 		// +transform(translateX(0px) translate3d(0,0,0))
 		left: 0
@@ -550,11 +555,12 @@ button
 	width: 310px
 	// +transform(translateX(-310px))
 	left: -100%
-	background: #fff
 	&__inner
 		//height: 100%
 		width: 100%
 		overflow: auto
+		background: #fff
+		padding-bottom: 20px
 	.menu__in
 		background: #FFF 
 		width: 100%
@@ -708,6 +714,8 @@ button
 	&__inner
 		//height: 100%
 		overflow: auto
+		padding-bottom: 20px
+		background: #f3f3f3
 	.projects__head
 		padding: 12px 20px 12px 80px
 		+clr
