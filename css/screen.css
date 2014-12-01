@@ -68,11 +68,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 html { font-size: 62.5%; }
 
 body { -ms-overflow-y: auto; overflow-y: auto; width: 480px; }
-body:after { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
+body .overlay { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
 body.is-moved-projects, body.is-moved-menu { height: 100%; overflow: hidden; }
 body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; }
 body.is-moved-projects .con, body.is-moved-menu .con { height: 100%; overflow: hidden; }
-body.is-moved-projects:after, body.is-moved-menu:after { visibility: visible; opacity: 1; }
+body.is-moved-projects .overlay, body.is-moved-menu .overlay { visibility: visible; opacity: 1; }
 
 @font-face { font-family: "pfagoraslabpro-italic"; src: url("fonts/PFAgoraSlabPro-MediumItalic.eot"); src: url("fonts/PFAgoraSlabPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/PFAgoraSlabPro-MediumItalic.woff") format("woff"), url("fonts/PFAgoraSlabPro-MediumItalic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
@@ -252,11 +252,11 @@ button { background: none; }
 
 .copyright p { font-family: Georgia, Arial, sans-serif; font-size: 16px; font-size: 1.6rem; line-height: 1.25; color: #737373; }
 
-.menu, .projects { position: fixed; top: 0; left: 0; height: 100%; padding-top: 74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; overflow: auto; -webkit-overflow-scrolling: touch; z-index: 9999; }
+.menu, .projects { position: fixed; top: 74px; left: 0; bottom: -74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; z-index: 9999; }
 .menu.is-open, .projects.is-open { left: 0; }
 
-.menu { width: 310px; left: -100%; }
-.menu__inner { width: 100%; overflow: auto; background: white; padding-bottom: 20px; }
+.menu { width: 310px; left: -100%; background: white; }
+.menu__inner { width: 100%; overflow: auto; background: white; padding-bottom: 94px; overflow: auto; -webkit-overflow-scrolling: touch; height: 100%; }
 .menu .menu__in { background: white; width: 100%; }
 .menu__heading { font-size: 13px; font-size: 1.3rem; font-family: Georgia, Arial, sans-serif; color: #a3a3a3; border-bottom: 1px solid #d1d1d1; margin: 20px 20px 0; display: block; text-transform: uppercase; padding: 15px 0; }
 .menu .menu__title { display: block; font-size: 20px; font-size: 2rem; font-family: "PT Sans", Arial, sans-serif; color: #1e1919; margin-bottom: 15px; }
@@ -299,8 +299,8 @@ button { background: none; }
 .menu__made { font-size: 16px; font-size: 1.6rem; color: #727272; line-height: 60px; }
 .menu__made i { display: inline-block; background: url("../img/svg/wow.svg") no-repeat 0 0; -moz-background-size: 51px 14px 100%; -webkit-background-size: 51px 14px 100%; background-size: 51px 14px 100%; width: 51px; height: 14px; display: inline-block; }
 
-.projects { max-width: 480px; width: 100%; left: -100%; }
-.projects__inner { overflow: auto; padding-bottom: 20px; background: #f3f3f3; }
+.projects { max-width: 480px; width: 100%; left: -100%; background: #f3f3f3; }
+.projects__inner { height: 100%; overflow: auto; padding-bottom: 94px; background: #f3f3f3; }
 .projects .projects__head { padding: 12px 20px 12px 80px; *zoom: 1; background: white; }
 .projects .projects__head:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 440px) { .projects .projects__head { padding-left: 40px; } }
