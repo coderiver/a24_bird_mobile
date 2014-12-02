@@ -72,7 +72,7 @@ html { font-size: 62.5%; }
 body { -ms-overflow-y: auto; overflow-y: auto; width: 480px; }
 body .overlay { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
 body.is-moved-projects, body.is-moved-menu { height: 100%; overflow: hidden; }
-body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; margin-bottom: -74px; padding-bottom: 74px; }
+body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; margin-bottom: -74px; padding-bottom: 74px; background: white; }
 body.is-moved-projects .con, body.is-moved-menu .con { height: 100%; overflow: hidden; }
 body.is-moved-projects .overlay, body.is-moved-menu .overlay { visibility: visible; opacity: 1; }
 
