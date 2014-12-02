@@ -541,7 +541,7 @@ button
 	background: #f3f3f3
 	+tr(left .4s)
 	z-index: 9999
-	//height: 100% 
+	overflow: hidden
 	&.is-open
 		left: 0
 .menu
@@ -550,12 +550,11 @@ button
 	background: #fff 
 	&__inner
 		width: 100%
-		overflow: auto
+		height: 100%
 		background: #fff
 		padding-bottom: 94px
 		overflow: auto
 		-webkit-overflow-scrolling: touch
-		height: 100%
 	.menu__in
 		background: #FFF 
 		width: 100%
@@ -711,9 +710,10 @@ button
 	background: #f3f3f3
 	&__inner
 		height: 100%
-		overflow: auto
-		padding-bottom: 94px
 		background: #f3f3f3
+		padding-bottom: 94px
+		-webkit-overflow-scrolling: touch
+		overflow: auto
 	.projects__head
 		padding: 12px 20px 12px 80px
 		+clr
