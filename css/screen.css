@@ -272,7 +272,7 @@ button { background: none; }
 .menu .menu__title.is-active .icon { top: -5px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); color: white; }
 .menu .menu__list { padding-bottom: 10px; margin-top: -1px; }
 .menu .menu__list li { position: relative; width: 100%; }
-.menu .menu__list a { font-size: 24px; font-size: 2.4rem; font-family: Georgia, Arial, sans-serif; line-height: 60px; color: black; display: block; padding: 0 20px; }
+.menu .menu__list a { font-size: 24px; font-size: 2.4rem; font-family: Georgia, Arial, sans-serif; line-height: 60px; color: black; display: block; padding: 0 20px; -webkit-tap-highlight-color: transparent; }
 .menu__box { text-align: justify; font-size: 0.1px; font-size: 0.01rem; word-spacing: 0px; padding: 10px 35px 10px 20px; }
 .menu__box:after { content: ""; width: 100%; display: inline-block; }
 .menu__button { height: 52px; text-align: center; font-size: 0; display: inline-block; padding: 0 20px; color: #4cb3bc; margin: 10px 0; border: 2px solid #25c4c7; }
