@@ -187,4 +187,14 @@ head.ready(function() {
  		/* Act on the event */
  		$('.comments__submit').removeClass('is-mod');
  	});
+ 	//
 });
+
+window.addEventListener( "orientationchange", function() {
+	$('.menu').removeClass('is-open');
+	$('.projects').removeClass('is-open');
+	$('.js-btn-menu').removeClass('is-active');
+	$('.js-container').removeClass('is-moved-projects');
+	$('.js-container').removeClass('is-moved-menu');
+	$('.js-container').removeClass('no-scroll');
+}, false);
