@@ -257,7 +257,7 @@ button { background: none; }
 
 .copyright p { font-family: Georgia, Arial, sans-serif; font-size: 16px; font-size: 1.6rem; line-height: 1.25; color: #737373; }
 
-.menu, .projects { position: fixed; top: 74px; bottom: -74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; z-index: 9999; overflow: hidden; }
+.menu, .projects { position: fixed; top: 74px; bottom: -74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; overflow: hidden; -webkit-overflow-scrolling: touch; z-index: 9999; }
 .menu.is-open, .projects.is-open { left: 1px; }
 
 .menu { width: 310px; left: -100%; background: white; }

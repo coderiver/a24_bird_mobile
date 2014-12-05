@@ -544,8 +544,9 @@ button
 	bottom: -74px
 	background: #f3f3f3
 	+tr(left .4s)
-	z-index: 9999
 	overflow: hidden
+	-webkit-overflow-scrolling: touch
+	z-index: 9999
 	&.is-open
 		left: 1px
 .menu
@@ -711,7 +712,6 @@ button
 .projects
 	max-width: 480px
 	width: 100%
-	// +transform(translateX(-480px))
 	left: -100%
 	background: #f3f3f3
 	&__inner

@@ -62,13 +62,6 @@ head.ready(function() {
 		menu.removeClass('is-open');
 		btn_menu.removeClass('is-active');
 	});
-	// menu.on('click', function (event) {
-	// 	event.stopPropagation();
-	// });
-	// projects.on('click', function (event) {
-	// 	event.stopPropagation();
-	// });
-
 	// projects		
 	btn_projects.on('click', function () {
 		btn_projects.toggleClass('is-active');
@@ -146,12 +139,6 @@ head.ready(function() {
  	if (navigator.userAgent.match(/Opera Mobi/i)) {
  		body.addClass('is-opera');
  	};
- // 	//scroll
- // 	$('.menu__inner').jScrollPane( {
-	// });
- // 	$('.projects__inner').jScrollPane( {
-	// });
-
 	// slider
  	if (slider.length) {
  		var slider_list = slider.find('.slider__list'),
@@ -176,8 +163,6 @@ head.ready(function() {
  			}
  		});
  	};
- 	$('.slick-next').slickNext();
- 	$('.slick-prev').slickPrev();
  	//comments my
  	$('.comments__my textarea').focusin(function(event) {
  		/* Act on the event */
