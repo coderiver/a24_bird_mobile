@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="google" value="notranslate">
+	<link rel="stylesheet" media="all" href="css/screen.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script>
+	// viewport for firefox (Android) and another mobile browsers
+	var ua = navigator.userAgent.toLowerCase();
+	var is_android = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	var is_firefox = ua.indexOf('firefox') > -1;
+	if (is_firefox && is_android) {
+		// alert ('FF');
+		document.write('<meta name="viewport" content="width=480, initial-scale=.67, maximum-scale=.67, user-scalable=no">');
+	} else {
+		// alert ('NoFF');
+		document.write('<meta name="viewport" content="width=480, user-scalable=no">');
+	}
+	</script>
+</head>
+<body class="js-container">
+<div class="main-wrapper">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header">
+			<!-- btn-menu -->
+			<button class="btn-menu js-btn-menu"><i></i></button>
+			<!-- logo -->
+			<a class="logo" href="#"><img src="img/logo.png" alt=""><span>женский журнал</span></a>
+			<!-- btn-search -->
+			<button class="btn-search js-btn-search is-active"><i class="icon icon-search"></i></button>
+			<!-- begin search  -->
+			<div class="search js-search">
+				<form action="">
+					<a href="#" class="search__close"></a>
+					<input type="text" class="search__keyword" value="Например, огуречная диета" onfocus="if (this.value=='Например, огуречная диета') this.value='';" onblur="if (this.value==''){this.value='Например, огуречная диета'}">
+					<button class="search__submit"><i class="icon icon-search"></i></button>
+				</form>
+			</div>
+			<!-- end search -->
+			<!-- logo-a42 -->
+			<button class="logo-a42 js-btn-projects"><img src="img/svg/a42.svg" alt=""></button>
+		</header>
+		<!-- menu -->
+		<div class="menu js-menu">
+			<div class="menu__inner">
+				<div class="menu__in">
+					<span class="menu__heading">События</span>
+					<ul class="menu__list">
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Репортаж</a></li>
+					</ul>
+					<span class="menu__heading">Истории</span>
+					<ul class="menu__list">
+						<li><a href="#">Люди</a></li>
+						<li><a href="#">Дела</a></li>
+						<li><a href="#">Здоровье</a></li>
+					</ul>
+					<span class="menu__heading">Проекты</span>
+					<ul class="menu__list">
+						<li><a href="#">Время до трёх</a></li>
+						<li><a href="#">Счет на kg</a></li>
+						<li><a href="#">Галерея мыслей</a></li>
+						<li><a href="#">Мужской взгляд</a></li>
+						<li><a href="#">Shop-ориентир</a></li>
+					</ul>
+				</div>
+				<div class="menu__buttons">
+					<div class="menu__box">
+						<button class="menu__button"><span>Вход</span></button>
+						<button class="menu__button"><span>регистрация</span></button>
+						<a href="#" class="menu__button menu__button_mod"><i></i><span>основная версия</span></a>
+					</div>
+					<div class="menu__box">
+						<span class="menu__title">Присоединяйтесь к нам</span>
+						<a href="#" class="menu__link"><i class="is-vk"></i></a>
+						<a href="#" class="menu__link"><i class="is-fb"></i></a>
+						<a href="#" class="menu__link"><i class="is-twitter"></i></a>
+						<a href="#" class="menu__link"><i class="is-od"></i></a>
+					</div>
+					<div class="menu__box">
+						<button class="logo-btn js-btn-projects"><span>Все проекты</span><img src="img/svg/a42-small-btn.svg" alt=""></button>
+					</div>
+					<div class="menu__footer">
+						<span class="menu__title">16+</span>
+						<div class="menu__copy">
+							<p>A42.RU, 2007–2014 <br>
+							Сайт не является частью <br>
+							зарегистрированного СМИ <br>
+							Эл № ФС 77 - 45324</p>
+						</div>
+						<p class="menu__made">разработка сайта — <a href="#"><i></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- projects -->
+		<div class="projects js-projects">
+			<div class="projects__inner">
+				<div class="projects__head">
+					<div class="projects__title">Проекты А42.RU</div>
+					<button class="projects__close">
+						<i class="icon icon-cancel"></i>
+					</button>
+				</div>
+				<div class="projects__in">
+					<div class="projects__item">
+						<div class="projects__type">СМИ <i class="icon icon-down-open"></i></div>
+						<ul class="projects__list">
+							<li><a href="#">Афиша</a></li>
+							<li><a href="#">Дороги</a></li>
+							<li><a href="#">Недвижимость</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</div>
+					<div class="projects__item">
+						<div class="projects__type">Город <i class="icon icon-down-open"></i></div>
+						<ul class="projects__list">
+							<li><a href="#">Афиша</a></li>
+							<li><a href="#">Дороги</a></li>
+							<li><a href="#">Недвижимость</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</div>
+					<div class="projects__item">
+						<div class="projects__type">Сервисы <i class="icon icon-down-open"></i></div>
+						<ul class="projects__list">
+							<li><a href="#">Афиша</a></li>
+							<li><a href="#">Дороги</a></li>
+							<li><a href="#">Недвижимость</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Форум</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="projects__footer">
+					<div class="projects__buttons">
+						<button class="projects__button projects__profile">Мой профиль<span>12</span></button>
+						<button class="projects__button projects__enter">Выход</button>
+					</div>
+					<div class="projects__buttons">
+						<button class="projects__button projects__profile">Вход</button>
+						<button class="projects__button projects__profile">Регистрация</button>
+					</div>
+					<div class="projects__bottom">
+						<span class="projects__years">16+</span>
+						<a href="#" class="projects__logo"><img src="img/svg/a42-small.svg" alt=""></a>
+						<div class="menu__copy">
+							<p>A42.RU, 2007–2014 <br>
+							Сайт не является частью зарегистрированного СМИ <br>
+							Эл № ФС 77 - 45324</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- begin con  -->
+		<div class="con">
+			<div class="article">
+				<div class="way">
+					<ul>
+						<li><a href="#">Проекты</a><span>—</span></li>
+						<li class="is-active"><a href="#">Галерея мыслей</a></li>
+					</ul>
+					<span class="date">13 октября</span>
+				</div>
+				<img src="http://placehold.it/480x296" alt="" class="article__main-img">
+				<div class="article__inner">
+					<h2 class="article__title">Финал «Мисс Авиатор-2014»</h2>
+					<div class="author author_mod">
+						<a href="#" class="author__avatar"><img src="http://placehold.it/70x70" alt=""></a>
+						<div class="author__name"><span>Екатерина Шмелёва, редактор</span></div>
+					</div>
+					<div class="article__box">
+						<p><strong>22 августа состоялся финал конкурса «Мисс Авиатор-2014». Романтичная и уютная атмосфера, созданная Асиёй Кирилишиной, директором ресторана «Авиатор», нежность и красота участниц превратили этот праздник в самое красивое событие лета.</strong></p>
+						<p>Дефиле в купальниках, свадебных платьях, творческий конкурс покорили зрителей. Девушки модельного агенства <a href="#">«AlessioModels»</a> действительно не только очаровательны, но и профессиональны и талантливы: отлично поют, рисуют, читают стихи, великолепно двигаются.</p>
+					</div>
+					<div class="footnote">
+						<div class="author">
+							<a href="#" class="author__avatar"><img src="http://placehold.it/70x70" alt=""></a>
+							<div class="author__name"><span>Алеся Кадакина, директор «AlessioModels»</span></div>
+						</div>
+						<p>Популярная модель, журналист, блогер и просто красивая девушка, находящаяся в курсе всех событий в городе, да и к тому же постоянная участница всех светских тусовок.</p>
+					</div>
+					<div class="article__box">
+						<p>В итоге призовые места распределились следующим образом. Корона победительницы от ювелирного дома «Эстет» и набор украшений досталась Ксении Пучковой. Ирина Горбунова (№ 4) заняла второе место, получив в подарок фирменные часы «Авиатор», специальный приз нашего журнала «Очарование неба» и интервью в «Птице». Алина Димитрова — третье место и сертификат от туристического агенства «Дети солнца» стоимостью 25 тысяч рублей.</p>
+					</div>
+					<div class="quote">
+						<i></i>
+						<p>Я с детства ненавидела уроки физкультуры в школе! Не понимала, зачем это нужно — бежать 9 кругов по школьному стадиону, чтобы потом у тебя все кололо, болело и язык на плече лежал. А в институте с первого курса захотелось позаниматься чем-нибудь интересным. В итоге: степ-аэробика, аква- аэробика, немного бега, тренажерные залы, занятия по пластике.</p>
+					</div>
+					<div class="article__box">
+						<p>Другие девушки также не остались без подарков. Татьяна Салимова станет лицом новой коллекции салона «Моника Ричи». Карина Кирилова унесла с собой роскошную корзину косметики от «Иль де Боте». Рекламная съёмка в журнале «Дорогое удовольствие» ждёт Дарью Черданцеву. Мария Прилипухина получила приз зрительских симпатий и чемодан BMW.</p>
+					</div>
+					<div class="article__img">
+						<img src="http://placehold.it/480x296" alt="">
+					</div>
+					<div class="article__img">
+						<img src="http://placehold.it/480x296" alt="">
+					</div>
+					<div class="article__box">
+						<p>Начинала я с одного раза в неделю, потом появилась возможность заниматься два раза в неделю, потом три.</p>
+					</div>
+					<div class="article__img">
+						<img src="http://placehold.it/480x296" alt="">
+						<span>Алеся Кадакина, <br>директор «AlessioModels»</span>
+					</div>
+					<div class="dialog">
+						<p class="dialog-first">— Алина, расскажи немного, откуда ты и чем увлекалась в детстве?</p>
+						<p class="dialog-second">— Я родилась в городе Березовском. В детстве, ещё до 1-го класса, мама отдала меня в школу искусств: я пробовала и рисовать, и танцевать, и даже несколько занятий в театральном кружке было. Задержалась в итоге на танцах, всё остальное было не моё. Танцами потом занималась 6 лет. Три раза в неделю пластика, классика, народный танец, плюс два раза в неделю ансамбль. И школа ещё, и в хоре.</p>
+						<p class="dialog-first">— Очень интересно! Как инновационный менеджер нашёл себя в йоге?</p>
+						<p class="dialog-second">— Я с детства ненавидела уроки физкультуры в школе! Не понимала, зачем это нужно — бежать 9 кругов по школьному стадиону, чтобы потом у тебя все кололо, болело и язык на плече лежал.</p>
+					</div>
+					<div class="footnote-thing">
+						<img src="http://placehold.it/120x120" alt="">
+						<p class="thing__title"><strong>Микроманипулятор</strong></p>
+						<p>— устройство, которое переводит <br>
+						крупные движения рук <br>
+						в микроскопические движения <br>
+						инструментов</p>
+					</div>
+					<div class="article__box">
+						<p>Начинала я с одного раза в неделю, потом появилась возможность заниматься два раза в неделю, потом три.</p>
+					</div>
+					<div class="footnote-thing">
+						<p class="thing-title"><strong>Боди-Дао</strong></p>
+						<p>— программа, которая работает на омоложение, оздоровление и долголетие. В ней используются фрагменты из Даосских практик. выводит образующиеся токсины, шлаки и тонизирует мышечную ткань, делая кожу упругой и молодой. </p>
+					</div>
+					<div class="article__list">
+						<p>Рекламная съёмка:</p>
+						<ul>
+							<li>Аудит задачи заказчика</li>
+							<li>Подготовка исполнителем методов реализации данной задачи</li>
+							<li>Рекламная фотосъемка</li>
+							<li>Обработка дизайнером полученных фото</li>
+						</ul>
+					</div>
+					<div class="social">
+						<span class="subtitle social__title">поделиться</span>
+						<div class="social__box">
+							<a href="#" class="social__link"><i class="is-vk"></i></a>
+							<a href="#" class="social__link"><i class="is-fb"></i></a>
+							<a href="#" class="social__link"><i class="is-twitter"></i></a>
+							<a href="#" class="social__link"><i class="is-od"></i></a>
+						</div>
+					</div>
+					<div class="comments">
+						<div class="comments__my">
+							<form action="">
+								<span class="subtitle comments__title">Комментарии</span>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+								<input type="submit" class="comments__submit" value="Отправить">
+							</form>
+						</div>
+						<div class="comments__ppl comments__first">
+							<div class="comments__profile">
+								<a href="#" class="comments__avatar"><img src="http://placehold.it/50x50" alt=""></a>
+								<div class="comments__info">
+									<span class="comments__name">Жанна Терентьева</span>
+									<span class="comments__date">, 4 апреля 2014 14:30</span>
+								</div>
+							</div>
+							<p>Сначала звонили на номер поддержки, там нам ничего вменяемого не сказали, взяли наш номер телефона и (вероятно) не перезвонили. </p>
+							<div class="comments__bottom">
+								<a href="#" class="comments__ans">Ответить</a>
+								<div class="comments__like">
+									<a href="#" class="like i-like"><i></i><span>3</span></a>
+									<a href="#" class="like i-dont-like"><i></i><span>1</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="comments__ppl comments__second">
+							<div class="comments__profile">
+								<a href="#" class="comments__avatar"><img src="http://placehold.it/50x50" alt=""></a>
+								<div class="comments__info">
+									<span class="comments__name">Kurt_Russelovich</span>
+									<span class="comments__date">, 4 апреля 2014 18:05</span>
+								</div>
+							</div>
+							<p>Зависит от типа фотосессии и количество её объектов</p>
+							<div class="comments__bottom">
+								<a href="#" class="comments__ans">Ответить</a>
+								<div class="comments__like">
+									<a href="#" class="like i-like"><i></i><span>3</span></a>
+									<a href="#" class="like i-dont-like"><i></i><span>1</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="best">
+						<span class="subtitle best__title">читай самое вкусное</span>
+						<div class="item">
+							<a href="#" class="item__img">
+								<img src="http://placehold.it/200x130" alt="">
+							</a>
+							<div class="item__in">
+								<div class="item__link">
+									<a href="#">новости</a>
+								</div>
+								<div class="item__title">
+									<a href="#">Театр «Встреча» запускает народный проект «Лучший»</a>
+								</div>
+								<span class="item__date">23 октября, 10:00</span>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#" class="item__img">
+								<img src="http://placehold.it/200x130" alt="">
+							</a>
+							<div class="item__in">
+								<div class="item__link">
+									<a href="#">репортаж</a>
+								</div>
+								<div class="item__title">
+									<a href="#">В Кемерове стартует первый этап конкурса «Мисс Авиатор 2014»</a>
+								</div>
+								<span class="item__date">23 мая</span>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#" class="item__img">
+								<img src="http://placehold.it/200x130" alt="">
+							</a>
+							<div class="item__in">
+								<div class="item__link">
+									<a href="#">Афиша</a>
+								</div>
+								<div class="item__title">
+									<a href="#">Коля Буду, клубный промоутер</a>
+								</div>
+								<span class="item__date">23 мая</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<footer class="footer">
+		<a href="#" class="logo_bot"></a>
+		<div class="copyright"><p>© a42.ru, 2007—2014 <br>
+	Сайт не является частью зарегистрированного СМИ <br>
+	Эл № ФС 77 — 45324</p></div>
+	</footer>
+		</div>
+		<!-- end con -->
+	</div>
+	<div class="overlay"></div>
+</div>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
