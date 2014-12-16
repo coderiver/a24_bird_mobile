@@ -4,21 +4,11 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="google" value="notranslate">
+	<!-- <meta name="viewport" content="width=480, user-scalable=yes"> -->
+	<meta name="viewport" content="width=480, initial-scale=0.75, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/screen.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<script>
-	// viewport for firefox (Android) and another mobile browsers
-	var ua = navigator.userAgent.toLowerCase();
-	var is_android = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-	var is_firefox = ua.indexOf('firefox') > -1;
-	if (is_firefox && is_android) {
-		// alert ('FF');
-		document.write('<meta name="viewport" content="width=480, initial-scale=.67, maximum-scale=.67, user-scalable=no, minimal-ui">');
-	} else {
-		// alert ('NoFF');
-		document.write('<meta name="viewport" content="width=480, user-scalable=no, minimal-ui">');
-	}
-	</script>
+
 </head>
 <body class="js-container">
 <div class="main-wrapper">
