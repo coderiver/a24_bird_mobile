@@ -507,3 +507,6 @@ button { background: none; }
 .logo-btn:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .logo-btn span { font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 20px; color: white; text-transform: uppercase; display: inline-block; vertical-align: middle; }
 .logo-btn img { width: 102px; height: 29px; display: inline-block; vertical-align: middle; margin-left: 20px; }
+
+.is-ff .menu, .is-ff .projects { left: auto; right: 100%; -moz-transition: right 0.4s, left 0.4s; -o-transition: right 0.4s, left 0.4s; -webkit-transition: right 0.4s, left 0.4s; transition: right 0.4s, left 0.4s; }
+.is-ff .menu.is-open, .is-ff .projects.is-open { left: -1px; right: auto; }

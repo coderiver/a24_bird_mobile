@@ -1464,7 +1464,14 @@ button
 
 
 
-
+.is-ff
+	.menu, .projects
+		left: auto
+		right: 100%
+		+transition(right .4s, left .4s)
+		&.is-open
+			left: -1px
+			right: auto
 
 
 

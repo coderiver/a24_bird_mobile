@@ -139,6 +139,10 @@ head.ready(function() {
  	if (navigator.userAgent.match(/Opera Mobi/i)) {
  		body.addClass('is-opera');
  	};
+ 	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
+ 	{
+ 	     body.addClass('is-ff');
+ 	};
 	// slider
  	if (slider.length) {
  		var slider_list = slider.find('.slider__list'),
