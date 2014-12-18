@@ -31,16 +31,17 @@ head.ready(function() {
 		// btn_menu.toggleClass('is-active');
 		projects.removeClass('is-open');
 		container.removeClass('is-moved-projects');
-		container.toggleClass('is-moved-menu');
 		// menu.toggleClass('is-open');
 		// 
 		if (btn_menu.hasClass('is-active')) {
 			btn_menu.removeClass('is-active');
 			menu.removeClass('is-open');
+			container.removeClass('is-moved-menu');	
 		}
 		else {
 			btn_menu.addClass('is-active');
-			menu.addClass('is-open');		
+			menu.addClass('is-open');	
+			container.addClass('is-moved-menu');
 		}
 		if (!body.hasClass('no-scroll')) {
 			var scroll_top = body.scrollTop();
@@ -67,16 +68,17 @@ head.ready(function() {
 		btn_projects.toggleClass('is-active');
 		menu.removeClass('is-open');
 		container.removeClass('is-moved-menu');
-		container.toggleClass('is-moved-projects');
+		container.addClass('is-moved-projects');
 		projects.toggleClass('is-open');
-		if ($('.js-btn-menu').hasClass('is-active')) {
-			$('.js-btn-menu').removeClass('is-active');
-		}
+		// if ($('.js-btn-menu').hasClass('is-active')) {
+		// 	$('.js-btn-menu').removeClass('is-active');
+		// }
 	});
 	projects_close.on('click', function () {
-		btn_projects.trigger('click');
+		// btn_projects.trigger('click');
 		projects.toggleClass('is-open');
-		container.toggleClass('is-moved-projects');
+		menu.addClass('is-open');
+		// container.toggleClass('is-moved-projects');
 	});
 
 	// search
@@ -143,6 +145,14 @@ head.ready(function() {
  	{
  	     body.addClass('is-ff');
  	};
+ 	if(navigator.userAgent.toLowerCase().indexOf("android") > -1)
+ 	{
+ 		body.addClass('is-ff');
+		if ($(window).width() === 480) {
+			document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+		};
+ 	};
+	
 	// slider
  	if (slider.length) {
  		var slider_list = slider.find('.slider__list'),

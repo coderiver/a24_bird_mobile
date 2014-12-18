@@ -303,24 +303,23 @@ button { background: none; }
 .menu__made { font-size: 16px; color: #727272; line-height: 60px; }
 .menu__made i { display: inline-block; background: url("../img/svg/wow.svg") no-repeat 0 0; -moz-background-size: 51px 14px 100%; -webkit-background-size: 51px 14px 100%; background-size: 51px 14px 100%; width: 51px; height: 14px; display: inline-block; }
 
-.projects { max-width: 480px; width: 100%; left: -100%; background: #f3f3f3; }
+.projects { max-width: 310px; width: 100%; left: -100%; background: #f3f3f3; }
 .projects__inner { height: 100%; background: #f3f3f3; padding-bottom: 94px; -webkit-overflow-scrolling: touch; overflow: auto; }
-.projects .projects__head { padding: 12px 20px 12px 80px; *zoom: 1; background: white; }
+.projects .projects__head { padding: 12px 20px 12px 30px; *zoom: 1; background: white; }
 .projects .projects__head:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 440px) { .projects .projects__head { padding-left: 40px; } }
 .projects .projects__title { float: left; font-size: 35px; font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 35px; color: #00c7ff; }
 .projects .projects__close { float: right; margin-top: 11px; font-size: 0; }
 .projects .projects__close .icon { font-size: 22px; color: #d7d7d7; }
-.projects .projects__type { position: relative; padding: 7px 10px 7px 80px; color: white; font-size: 35px; cursor: pointer; background: #00c7ff; font-family: "PT Sans Narrow", Arial, sans-serif; }
+.projects .projects__type { position: relative; padding: 7px 10px 7px 40px; color: white; font-size: 35px; cursor: pointer; background: #00c7ff; font-family: "PT Sans Narrow", Arial, sans-serif; }
 @media only screen and (max-width: 440px) { .projects .projects__type { padding-left: 40px; } }
 .projects .projects__type.is-active { background: black; }
-.projects .projects__type.is-active .icon { top: 12px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-.projects .projects__type .icon { position: absolute; top: 15px; left: 40px; font-size: 30px; }
-@media only screen and (max-width: 440px) { .projects .projects__type .icon { left: 10px; } }
+.projects .projects__type.is-active .icon { top: 50%; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); margin-top: -16px; }
+.projects .projects__type .icon { position: absolute; top: 50%; margin-top: -15px; left: 10px; font-size: 30px; }
 .projects .projects__list { display: none; padding: 0 20px; background: white; }
 .projects .projects__list li { border-top: 1px solid #d7d7d7; }
 .projects .projects__list li:first-child { border: none; }
-.projects .projects__list a { display: block; margin: 0 -20px; padding: 17px 20px 17px 80px; font-size: 20px; font-weight: 700; font-family: "PT Sans", Arial, sans-serif; color: black; }
+.projects .projects__list a { display: block; margin: 0 -20px; padding: 17px 20px 17px 40px; font-size: 20px; font-weight: 700; font-family: "PT Sans", Arial, sans-serif; color: black; }
 .projects__footer { padding: 20px; }
 .projects__buttons { display: block; }
 .projects__button { margin: 10px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; height: 60px; padding: 0 20px; font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 35px; color: white; position: relative; }
