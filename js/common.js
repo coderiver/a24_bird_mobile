@@ -184,7 +184,7 @@ head.ready(function() {
  		/* Act on the event */
  		$('.comments__submit').removeClass('is-mod');
  	});
- 	//
+ 
 });
 
 window.addEventListener( "orientationchange", function() {
