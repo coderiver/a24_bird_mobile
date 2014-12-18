@@ -145,12 +145,10 @@ head.ready(function() {
  	{
  	     body.addClass('is-ff');
  	};
+ 	var ua = navigator.userAgent.toLowerCase();
  	if(navigator.userAgent.toLowerCase().indexOf("android") > -1)
  	{
  		body.addClass('is-ff');
-		if ($(window).width() === 480) {
-			document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
-		};
  	};
 	
 	// slider
